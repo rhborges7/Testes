@@ -1,0 +1,89 @@
+package controller;
+
+import model.*;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		//DEMONSTRAÇÃO DO USO DE CONTRUTOR PARA DEFINIR OS SET'S DA CLASSE USUARIO
+		Usuario usuario = new Usuario(647349, "rhborges7", "****","rhborges7@gmail.com", "Rhuan Borges", "967674907");
+		usuario.mostrar(); // USO DO METODO MOSTRAR PARA DAR SAIDA NO CONSOLE DOS VALORES INSERIDOS EM Usuario
+
+	System.out.println("___________________________________________________________________________________");
+		
+		//DEMONSTRAÇÃO DO USO DE CONTRUTOR PARA DEFINIR OS SET'S DA CLASSE USUARIO
+		Endereco endereco = new Endereco("Nao Sei", "164", "Nao sei", "bangu", "rio de janeiro", "RJ", "21-840-555"); //CRIAÇÃO DE UM OBJETO NOVO EM Endereco E SET DOS VALORES
+		
+		endereco.mostrar(); // USO DO METODO MOSTRAR PARA DAR SAIDA NO CONSOLE DOS VALORES INSERIDOS EM Endereco
+
+	System.out.println("___________________________________________________________________________________");
+
+		Pedido pedido = new Pedido(); //CRIAÇÃO DE UM OBJETO NOVO NA CLASSE Pedido E SET DOS VALORES
+
+		pedido.setNumero(4555);
+		pedido.setDataEmissao("22/11/2018");
+		pedido.setFormaDePagamento("Boleto");
+		pedido.setValorTotal(1800.00);
+		pedido.setSituacao("Ferrado");
+		pedido.mostrar(); // USO DO METODO MOSTRAR PARA DAR SAIDA NO CONSOLE DOS VALORES INSERIDOS EM Pedido
+
+	System.out.println("___________________________________________________________________________________");
+		
+		ItemDePedido Idp1 = new ItemDePedido(); //CRIAÇÃO DE UM OBJETO NOVO NA CLASSE ItemDePedido E SET DOS VALORES
+
+		Idp1.setQtde(22);
+		Idp1.setSubtotal(554);
+		Idp1.mostrar(); // USO DO METODO MOSTRAR PARA DAR SAIDA NO CONSOLE DOS VALORES INSERIDOS EM Idp1
+
+	System.out.println("___________________________________________________________________________________");
+
+		ItemDePedido Idp2 = new ItemDePedido(); //CRIAÇÃO DE UM OBJETO SEMELHANTE AO ANTERIOR NA CLASSE ItemDePedido E SET DOS VALORES
+
+		Idp2.setQtde(1);
+		Idp2.setSubtotal(8);
+		Idp2.mostrar(); // USO DO METODO MOSTRAR PARA DAR SAIDA NO CONSOLE DOS VALORES INSERIDOS EM Idp2
+
+	System.out.println("___________________________________________________________________________________");
+
+		Notebook ntbook1 = new Notebook();  //CRIAÇÃO DE UM OBJETO NOVO NA CLASSE Notebook E SET DOS VALORES
+
+		ntbook1.setNumeroNote(454);
+		ntbook1.setModelo("Nao Sei");
+		ntbook1.setDescricao("sla");
+		ntbook1.setEstoque(54);
+		ntbook1.setPrecoUnitario(21.00);
+		ntbook1.setFigura("sla");
+		ntbook1.setDataCadastro("21/10/1100");
+		System.out.println(ntbook1.toString()); // USO DO METODO TO STRING PARA DAR SAIDA DOS VALORES INSERIDOS EM ntbook1 NO CONSOLE
+
+	System.out.println("___________________________________________________________________________________");
+
+		Notebook ntbook2 = new Notebook(); //CRIAÇÃO DE UM OBJETO SEMELHANTE AO ANTERIOR NA CLASSE ItemDePedido E SET DOS VALORES
+
+		ntbook2.setNumeroNote(50);
+		ntbook2.setModelo("Indefinido 2");
+		ntbook2.setDescricao("Indefinido 2");
+		ntbook2.setEstoque(8);
+		ntbook2.setPrecoUnitario(21.00);
+		ntbook2.setFigura("Indefinido 2");
+		ntbook2.setDataCadastro("21/10/1100");
+		System.out.println(ntbook2.toString()); // USO DO METODO TO STRING PARA DAR SAIDA DOS VALORES INSERIDOS EM ntbook2 NO CONSOLE
+
+	System.out.println("___________________________________________________________________________________");
+
+		Notebook ntbook3 = new Notebook(); //CRIAÇÃO DE UM OBJETO SEMELHANTE AO ANTERIOR NA CLASSE ItemDePedido E SET DOS VALORES
+
+		ntbook3.setNumeroNote(60);
+		ntbook3.setModelo("Indefinido 3");
+		ntbook3.setDescricao("Indefinido 3");
+		ntbook3.setEstoque(10);
+		ntbook3.setPrecoUnitario(23.50);
+		ntbook3.setFigura("Indefinido 3");
+		ntbook3.setDataCadastro("22/11/2018");
+		System.out.println(ntbook3.toString()); // USO DO METODO TO STRING PARA DAR SAIDA DOS VALORES INSERIDOS EM ntbook3 NO CONSOLE
+
+												
+
+	}
+}
